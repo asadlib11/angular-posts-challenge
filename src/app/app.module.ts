@@ -16,6 +16,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ShortNumberPipe } from './pipes/short-number.pipe';
 import { PendingChangesGuard } from './guards/pendingChanges.guard';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PendingChangesGuard } from './guards/pendingChanges.guard';
     HttpClientModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [PendingChangesGuard],
   bootstrap: [AppComponent]

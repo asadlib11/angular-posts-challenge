@@ -60,6 +60,7 @@ export class DetailsComponent implements OnInit, ComponentCanDeactivate {
         this.postDetailsForm.setValue({
           caption: res.result.caption,
         });
+        this.postModified = false;
       });
   }
 

@@ -1,3 +1,9 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/posts">
+     <mat-icon>keyboard_backspace</mat-icon>
+   </button>
+   <span>Back to List View</span>
+ </mat-toolbar>
 <div style="height: 100%; width: 100%; margin: auto; position: relative;">
     <h1>Post Details:</h1>
     <form [formGroup]="postDetailsForm" (ngSubmit)="onSubmit()">
