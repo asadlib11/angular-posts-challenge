@@ -38,7 +38,7 @@
                     <img src="../../../assets/svg/comment.svg"><span> {{post.counts.comments | shortNumber}}</span>
                    </div>
                    <div>
-                       <p class="time">{{post.postedAt}}</p>
+                       <p class="time">{{post.postedAt | date:'dd/mm/yy, hh:mm'}}</p>
                    </div>
             </div>
 
