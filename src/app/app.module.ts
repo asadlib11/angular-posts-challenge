@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ShortNumberPipe } from './pipes/short-number.pipe';
+import { PendingChangesGuard } from './guards/pendingChanges.guard';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ShortNumberPipe } from './pipes/short-number.pipe';
     MatFormFieldModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [PendingChangesGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
