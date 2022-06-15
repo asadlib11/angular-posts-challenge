@@ -5,15 +5,13 @@
         <img
           mat-card-image
           style="width: 100px; height: 100px; border-radius: 10px;"
-          src="../../../assets/images/alpgin.jpeg"
+          src="{{post.user.profilePicUrl}}"
           alt="Alphin"
         />
       </mat-grid-tile>
       <mat-grid-tile>
         <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz
-          breeds of dog from Japan. A small, agile dog that copes very well with
-          mountainous terrain, the Shiba Inu was originally bred for hunting.
+          {{post.caption}}
         </p>
       </mat-grid-tile>
       <mat-grid-tile cols="2">
@@ -22,12 +20,12 @@
                   <img
                     mat-card-image
                     style="width: 40px; height: 40px; border-radius: 20px; margin-top: 5px;"
-                    src="../../../assets/images/alpgin.jpeg"
-                    alt="Alphin"
+                    src="{{post.user.profilePicUrl}}"
+                    alt="Profile Picture"
                   />
                   <div style="margin-left: 26px;">
-                      <h3 class="username">alphin.de</h3>
-                      <p class="followers">80k followers</p>
+                      <h3 class="username">{{post.user.username}}</h3>
+                      <p class="followers">{{post.user.counts.followedBy}}</p>
                   </div>
               </div>
         </mat-card-content>
@@ -36,17 +34,17 @@
         <mat-card-content>
             <div style="margin-top: 10px;">
                 <div>
-                    <img src="../../../assets/svg/like.svg"><span style="margin-right: 7px;"> 1.2K</span>
-                    <img src="../../../assets/svg/comment.svg"><span> 2.2k</span>
+                    <img src="../../../assets/svg/like.svg"><span style="margin-right: 7px;"> {{post.counts.likes}}</span>
+                    <img src="../../../assets/svg/comment.svg"><span> {{post.counts.comments}}</span>
                    </div>
                    <div>
-                       <p class="time">13/02/2022, 10:00</p>
+                       <p class="time">{{post.postedAt}}</p>
                    </div>
             </div>
 
         </mat-card-content>
       </mat-grid-tile>
-      <mat-grid-tile><button mat-button>Edit</button></mat-grid-tile>
+      <mat-grid-tile><button mat-raised-button>Edit</button></mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
 </mat-card>
