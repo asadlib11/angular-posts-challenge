@@ -25,7 +25,7 @@
                   />
                   <div style="margin-left: 26px;">
                       <h3 class="username">{{post.user.username}}</h3>
-                      <p class="followers">{{post.user.counts.followedBy}}</p>
+                      <p class="followers">{{post.user.counts.followedBy | shortNumber}}</p>
                   </div>
               </div>
         </mat-card-content>
@@ -34,8 +34,8 @@
         <mat-card-content>
             <div style="margin-top: 10px;">
                 <div>
-                    <img src="../../../assets/svg/like.svg"><span style="margin-right: 7px;"> {{post.counts.likes}}</span>
-                    <img src="../../../assets/svg/comment.svg"><span> {{post.counts.comments}}</span>
+                    <img src="../../../assets/svg/like.svg"><span style="margin-right: 7px;"> {{post.counts.likes | shortNumber}}</span>
+                    <img src="../../../assets/svg/comment.svg"><span> {{post.counts.comments | shortNumber}}</span>
                    </div>
                    <div>
                        <p class="time">{{post.postedAt}}</p>

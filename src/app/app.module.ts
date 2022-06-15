@@ -14,13 +14,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { ShortNumberPipe } from './pipes/short-number.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     PostComponent,
-    DetailsComponent
+    DetailsComponent,
+    ShortNumberPipe
   ],
   imports: [
     BrowserModule,
