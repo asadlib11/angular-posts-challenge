@@ -14,9 +14,17 @@ export class PostService {
 
   public getPosts(): Observable<Object>{
     return this.http.get(
-      `${API_URL}${'postings'}`, { headers: {
+      `${API_URL}postings`, { headers: {
         'fr-access-token': TOKEN
       }},
-    );    
+    );
+  }
+
+  public getPostDetails(postId: string): Observable<Object>{
+    return this.http.get(
+      `${API_URL}postings/${postId}`, { headers: {
+        'fr-access-token': TOKEN
+      }},
+    );
   }
 }

@@ -1,1 +1,12 @@
-<p>details works!</p>
+<div style="height: 100%; width: 100%; margin: auto; position: relative;">
+    <h1>Post Details:</h1>
+    <form [formGroup]="postDetailsForm">
+        <mat-form-field style="height: 100%; width: 50%" appearance="legacy" MatFormFieldControl="caption">
+            <mat-label>Caption</mat-label>
+            <textarea style="height: 200px;" matInput placeholder="Insert a caption" formControlName="caption"></textarea>
+        </mat-form-field>
+        <div>
+            <button mat-raised-button color="primary" type="submit" [disabled]="!postDetailsForm.valid">Submit</button>
+        </div>
+    </form>
+</div>
