@@ -1,1 +1,52 @@
-<p>post works!</p>
+<mat-card class="card">
+  <mat-card-content>
+    <mat-grid-list cols="5">
+      <mat-grid-tile>
+        <img
+          mat-card-image
+          style="width: 100px; height: 100px; border-radius: 10px;"
+          src="../../../assets/images/alpgin.jpeg"
+          alt="Alphin"
+        />
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz
+          breeds of dog from Japan. A small, agile dog that copes very well with
+          mountainous terrain, the Shiba Inu was originally bred for hunting.
+        </p>
+      </mat-grid-tile>
+      <mat-grid-tile cols="2">
+          <mat-card-content>
+              <div style="display:flex;">
+                  <img
+                    mat-card-image
+                    style="width: 40px; height: 40px; border-radius: 20px; margin-top: 5px;"
+                    src="../../../assets/images/alpgin.jpeg"
+                    alt="Alphin"
+                  />
+                  <div style="margin-left: 26px;">
+                      <h3 class="username">alphin.de</h3>
+                      <p class="followers">80k followers</p>
+                  </div>
+              </div>
+        </mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card-content>
+            <div style="margin-top: 10px;">
+                <div>
+                    <img src="../../../assets/svg/like.svg"><span style="margin-right: 7px;"> 1.2K</span>
+                    <img src="../../../assets/svg/comment.svg"><span> 2.2k</span>
+                   </div>
+                   <div>
+                       <p class="time">13/02/2022, 10:00</p>
+                   </div>
+            </div>
+
+        </mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile><button mat-button>Edit</button></mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
